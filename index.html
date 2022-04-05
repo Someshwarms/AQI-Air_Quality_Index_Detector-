@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-color: #87CEEB;
+    background-image: url('https://www.sparetheair.com/assets/aqi/Ozone2017.png');
+  }
+</style>
+    <meta charset="UTF-8">
+    <title>Air Quality Index Predictor</title>
+</head>
+<body>
+
+    <form method="post" action="/predict">
+
+        <label>PM2.5</label><br>
+        <input type="text" name="pm25"><br><br>
+
+        <label>PM10</label><br>
+        <input type="text" name="pm10"><br><br>
+
+        <label>Nitrogen Oxide</label><br>
+        <input type="text" name="no"><br><br>
+
+        <label>Nitrogen Dioxide</label><br>
+        <input type="text" name="no2"><br><br>
+
+
+        <label>Nitrate</label><br>
+        <input type="text" name="nh3"><br><br>
+
+        <label>Carbon Oxide</label><br>
+        <input type="text" name="co"><br><br>
+
+        <label>Sulphur Dioxide</label><br>
+        <input type="text" name="so2"><br><br>
+
+        <label>Ozone</label><br>
+        <input type="text" name="o3"><br><br>
+
+        <label>Benzene</label><br>
+        <input type="text" name="Ben"><br><br>
+
+        <label>Xylene</label><br>
+        <input type="text" name="xy"><br><br>
+
+        <label>Toulene</label><br>
+        <input type="text" name="tou"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>

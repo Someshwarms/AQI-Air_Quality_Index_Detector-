@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #87CEEB;
+    background-image: url('https://d3pc1xvrcw35tl.cloudfront.net/ln/images/685x514/aqi_20191112480.png');
+  }
+</style>
+    <meta charset="UTF-8">
+    <title>Air Quality Index</title>
+    <h1>Air Quality Index</h1>
+    <h2><p>{{result}}</p></h2>
+    {% if result <= 50 %}
+    <h2>GOOD</h2>
+    {% elif result <= 100 %}
+    <h2>Moderate</h2>
+    {% elif result <= 150 %}
+    <h2>Unhealthy for sensitive people</h2>
+    {% elif result <= 200 %}
+    <h2>Unhealthy</h2>
+    {% elif result <= 300 %}
+    <h2>Very Unhealthy</h2>
+    {% elif result >= 300 %}
+    <h2>Hazardous</h2>
+    {% endif %}
+</head>
+<body>
+
+</body>
+</html>
